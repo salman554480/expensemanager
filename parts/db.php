@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'authorization');
+$conn = mysqli_connect('localhost', 'root', '', 'expensemanager');
 //if(mysqli_connect_errno()){
 //		echo "failed";
 //	}else{
