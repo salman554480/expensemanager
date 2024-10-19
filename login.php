@@ -1,11 +1,5 @@
 <?php session_start();
 require_once('parts/db.php');
-
-$select = "SELECT * FROM setting";
-$run = mysqli_query($conn, $select);
-$row = mysqli_fetch_array($run);
-$website =  $row['website_name'];
-$admin_email =  $row['admin_email'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +22,7 @@ $admin_email =  $row['admin_email'];
     </section>
     <section class="login-content">
         <div class="logo">
-            <h1><?php echo $website; ?></h1>
+            <h1>Website Name</h1>
         </div>
         <div class="login-box">
             <?php if (isset($_GET['verify'])) {
